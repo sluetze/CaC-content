@@ -372,7 +372,7 @@ controls:
     levels:
       - baseline
     rules:
-# TODO: Need to implement rule package_crypto_policies_installed
+      - package_crypto-policies_installed
       - configure_openssl_tls_crypto_policy
       - crypto_policy_not_legacy
       - configure_openssl_crypto_policy
@@ -444,8 +444,8 @@ controls:
     levels:
       - baseline
     rules:
-# TODO: Need to implement rule package_crypto_policies_installed
       - configure_openssl_tls_crypto_policy
+      - package_crypto-policies_installed
       - crypto_policy_not_legacy
       - configure_openssl_crypto_policy
       - configure_crypto_policy
@@ -465,8 +465,8 @@ controls:
     levels:
       - baseline
     rules:
-# TODO: Need to implement rule package_crypto_policies_installed
       - configure_openssl_tls_crypto_policy
+      - package_crypto-policies_installed
       - crypto_policy_not_legacy
       - configure_openssl_crypto_policy
       - configure_crypto_policy
@@ -829,7 +829,7 @@ controls:
     levels:
       - baseline
     rules:
-# TODO: Need to implement rule sshd_disable_host_auth
+      - disable_host_auth
       - sshd_disable_empty_passwords
       - sshd_disable_rhosts
       - sshd_enable_pam
@@ -861,8 +861,8 @@ controls:
     levels:
       - baseline
     rules:
-# TODO: Need to implement rule account_password_pam_unix_enabled
-# TODO: Need to implement rule account_password_pam_modules_in_authselect_profile
+      - accounts_password_pam_unix_enabled
+      - accounts_password_pam_modules_in_authselect_profile
       - sshd_include_crypto_policy
       - configure_crypto_policy
       - dconf_gnome_screensaver_idle_delay
