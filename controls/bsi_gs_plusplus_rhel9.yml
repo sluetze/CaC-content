@@ -2,7 +2,9 @@ policy: Grundschutz++
 title: Grundschutz++ for RHEL 9
 id: bsi_gs_plusplus_rhel9
 version: '1.0'
-source: https://github.com/sig-bsi-grundschutz
+source: https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/36a0fac473c630dd76c83fdfb13a201770b4e1bd/control_layer/Grundschutz%2B%2B/Grundschutz%2B%2B-resolved_catalog.json
+reference_type: bsi-gs-plusplus
+product: rhel9
 levels:
   - id: baseline
 controls:

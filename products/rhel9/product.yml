@@ -54,6 +54,7 @@ platform_package_overrides:
 reference_uris:
   cis: 'https://www.cisecurity.org/benchmark/red_hat_linux/'
   ccn: 'https://www.ccn-cert.cni.es/pdf/guias/series-ccn-stic/guias-de-acceso-publico-ccn-stic/6768-ccn-stic-610a22-perfilado-de-seguridad-red-hat-enterprise-linux-9-0/file.html'
+  bsi-gs-plusplus: 'https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/36a0fac473c630dd76c83fdfb13a201770b4e1bd/control_layer/Grundschutz%2B%2B/Grundschutz%2B%2B-resolved_catalog.json'
 
 centos_pkg_release: "5ccc5b19"
 centos_pkg_version: "8483c65d"
