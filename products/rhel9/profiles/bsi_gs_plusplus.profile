@@ -8,7 +8,7 @@ title: 'BSI Grundschutz++'
 metadata:
     SMEs:
         - sluetze
-    version: 2026-08-26T10:52:47.119252+00:00
+    version: "2026-08-26T10:52:47.119252+00:00"
     reference: https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek/blob/36a0fac473c630dd76c83fdfb13a201770b4e1bd/control_layer/Grundschutz%2B%2B/Grundschutz%2B%2B-resolved_catalog.json
 
 description: |-
@@ -20,33 +20,33 @@ selections:
     - bsi_gs_plusplus_rhel9:all
     - var_account_disable_post_pw_expiration=35
     - var_accounts_max_concurrent_login_sessions=1
-    - var_password_pam_dcredit=-1
+    - var_password_pam_dcredit=1
     - var_password_pam_dictcheck=1
-    - var_password_pam_lcredit=-1
+    - var_password_pam_lcredit=1
     - var_password_pam_maxrepeat=3
     - var_password_pam_maxsequence=3
     - var_password_pam_minclass=3
     - var_password_pam_minlen=15
-    - var_password_pam_ocredit=-1
+    - var_password_pam_ocredit=1
     - var_password_pam_remember=5
     - var_password_pam_remember_control_flag=requisite
-    - var_password_pam_ucredit=-1
+    - var_password_pam_ucredit=1
     - var_accounts_passwords_pam_faillock_deny=3
-    - var_accounts_passwords_pam_faillock_root_unlock_time=0
+    - var_accounts_passwords_pam_faillock_root_unlock_time=never
     - var_accounts_passwords_pam_faillock_fail_interval=900
-    - var_accounts_passwords_pam_faillock_unlock_time=0
-    - var_accounts_tmout=600
-    - var_system_crypto_policy=DEFAULT
-    - inactivity_timeout_value=900
-    - var_screensaver_lock_delay=0
+    - var_accounts_passwords_pam_faillock_unlock_time=never
+    - var_accounts_tmout=10_min
+    - var_system_crypto_policy=default
+    - inactivity_timeout_value=15_minutes
+    - var_screensaver_lock_delay=immediate
     - var_authselect_profile=sssd
-    - var_pam_wheel_group_for_su=sugroup
-    - var_logind_session_timeout=300
+    - var_pam_wheel_group_for_su=default
+    - var_logind_session_timeout=5_minutes
     - var_networkmanager_dns_mode=default
-    - rsyslog_remote_loghost_address=logcollector_placeholder
+    - rsyslog_remote_loghost_address=default
     - var_selinux_policy_name=targeted
     - var_selinux_state=enforcing
-    - sshd_idle_timeout_value=300
+    - sshd_idle_timeout_value=5_minutes
     - var_sshd_set_keepalive=0
     - var_sshd_max_sessions=10
-    - var_sudo_timestamp_timeout=5
+    - var_sudo_timestamp_timeout=5_minutes
